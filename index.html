@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="responsive.css" /> -->
+    <!-- box icon -->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <title>HealthCare Tool - Patient Page</title>
+</head>
+
+<body>
+
+    <!-- Sidebar When Collapsed -->
+    <div id="sidebar" class="sidebar ">
+
+        <a id="hamburger" class="bx bx-menu hoverclass"
+            style="position: fixed;color:#ffffff; top: 10px; left: 10px; font-size: 30px;"></a>
+
+        <div class="nav_list ">
+            <a href="#"><i class="bx bxs-dashboard " style="color: #ffffff"></i></a>
+            <a href="#"><i class="bx bxs-group" style="color: #ffffff"></i></a>
+            <a href="#"><i class="bx bx-stats" style="color: #ffffff"></i></a>
+            <a href="#"><i class='bx bx-notepad' style='color:#ffffff'></i></a>
+            <a href="#"><i class='bx bx-calendar-plus' style='color:#ffffff'></i></a>
+            <a href="#"><i class='bx bx-folder' style='color:#ffffff'></i></a>
+        </div>
+    </div>
+
+    <!-- Sidebar-end When Collapsed -->
+
+    <!-- Sidebar When open -->
+    <div id="sidenav" class="sidenav ">
+
+        <a id="sidebarToggle" style="position: fixed;color:#ffffff; top: 10px; left: 10px; font-size: 24px;"> &#9587</a>
+
+        <div class="logo">
+            <a href="#">HealthCare</a>
+        </div>
+
+        <ul class="nav_list">
+            <li class="listData">
+                <a href="#">
+                    <i class="bx bxs-dashboard" style="color: #ffffff;left: 3px;font-size: 24px"></i>
+                    <span class="elments_link"> Dashboard </span>
+                </a>
+            </li>
+            <li class="listData">
+                <a href="#">
+                    <i class="bx bxs-group" style="color: #ffffff;font-size: 24px;"></i>
+                    <span class="elments_link">People</span>
+                </a>
+            </li>
+            <li class="listData">
+                <a href="#">
+                    <i class="bx bx-stats" style="color: #ffffff;font-size: 24px;"></i>
+                    <span class="elments_link">Health stats</span>
+                </a>
+            </li>
+            <li class="listData">
+                <a href="#">
+                    <i class='bx bx-notepad' style='color:#ffffff;font-size: 24px;'></i>
+                    <span class="elments_link">Records</span>
+                </a>
+            </li>
+            <li class="listData">
+                <a href="#">
+                    <i class='bx bx-calendar-plus' style='color:#ffffff;font-size: 24px;'></i>
+                    <span class="elments_link">Book Appointment</span>
+                </a>
+            </li>
+            <li class="listData">
+                <a href="#">
+                    <i class='bx bx-folder' style='color:#ffffff;font-size: 24px;'></i>
+                    <span class="elments_link">See Appointment</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- Sidebar-end When open -->
+
+    <!-- Content -->
+    <div class="wrapper">
+        <div class="header">
+            <p class="hoverclass popupButton"><span>&#8592</span> Back to dashboard</p>
+
+            <div class="user">
+                <div class="hoverclass notification popupButton">
+                    <i class='bx bx-bell'></i>
+                </div>
+                
+                <img src="man.jpg" style="height: 30px; border-radius: 15px;" alt="User Image" class="hoverclass my popupButton">
+                <span class="hoverclass popupButton">Dr. Alex Hess</span>
+                <i class="bx bx-chevron-down my hoverclass popupButton"></i>
+
+
+            </div>
+        </div>
+        <div class="heading">
+            <h2>Current Appointment</h2>
+
+        </div>
+
+        <div class="content">
+            <div class="column1">
+                <div class="row1">
+                    <a href="#"><img src="man.jpg" alt="Roger"></a>
+                    <h3>Roger Curtis</h3>
+                    <p>Age:36</p>
+                    <button class="btn popupButton  updatebutton">Update</button>
+                </div>
+
+                <div class="row2 ">
+                    <h3>Information:</h3>
+                
+                    <table class="info-table">
+                        <tr>
+                            <th>Gender:</th>
+                            <td>Male</td>
+                        </tr>
+                        <tr>
+                            <th>Blood Type:</th>
+                            <td>O+ [Positive]</td>
+                        </tr>
+                        <tr>
+                            <th>Allergies:</th>
+                            <td>Milk, Penicillin</td>
+                        </tr>
+                        <tr>
+                            <th>Diseases:</th>
+                            <td>Diabetes, Blood Disorders</td>
+                        </tr>
+                        <tr>
+                            <th>Height:</th>
+                            <td>178 cm</td>
+                        </tr>
+                        <tr>
+                            <th>Weight:</th>
+                            <td>65 Kg</td>
+                        </tr>
+                        <tr>
+                            <th>Patient ID:</th>
+                            <td>208898786</td>
+                        </tr>
+                        <tr>
+                            <th>Last Visit:</th>
+                            <td>25 October 2019</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="column2">
+                <div class="row1">
+                    <div  class="box hoverclass popupButton">
+                        <img src="heart-rate.png" alt="Heart-Rate">
+                        <h4>Heart Rate</h4>
+                        <p>80bpm</p>
+                    </div>
+                    <div class="box hoverclass popupButton">
+                        <img src="hot.png" alt="Heart-Rate">
+                        <h4>Body Temperature</h4>
+                        <p>36.5&degC</p>
+                    </div>
+                    <div class="box hoverclass popupButton">
+                        <img src="test-tube.png" alt="Heart-Rate">
+                        <h4>Glucose</h4>
+                        <p>100mg/dl</p>
+                    </div>
+                </div>
+
+                <div class="row2">
+                    <h3>Test Reports</h3>
+                    <div class="contain">
+                        <div  class="box hoverclass popupButton">
+                            <div class="image">
+                                <img src="report1.png" alt="Report-1">
+                            </div>
+                            <div class="report">
+                                <h4>City Scan -Full Body</h4>
+                                <p>12th February 2020</p>
+                            </div>
+                        </div>
+                        <div class="box hoverclass popupButton">
+                            <div class="image">
+                                <img src="report2.png" alt="Report-1">
+                            </div>
+                            <div class="report">
+                                <h4>Creatine Kinase T</h4>
+                                <p>12th February 2020</p>
+                            </div>
+                        </div>
+                        <div class="box hoverclass popupButton">
+                            <div class="image">
+                                <img src="report3.png" alt="Report-1">
+                            </div>
+                            <div class="report">
+                                <h4>Eye Fluorescein Test</h4>
+                                <p>12th February 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row3">
+                    <h3>Prescriptions</h3>
+                    <div class="add popupButton ">
+                      <input type="text" placeholder="+ Add a prescription">
+                    </div>
+
+                    <div class="table ">
+                        <table class=" presctionTable" >
+                            <tr class="tableH">
+                              <th>Prescription</th>
+                              <th>Date</th>
+                              <th>Duration</th>
+                            </tr>
+                            <tr>
+                              <td class="prescription"><hr><div class="image"><img src="word.png" alt="Prescription"></div><h4>Heart Diseases</h4></td>
+                              <td>25 october 2019</td>
+                              <td>3 Month</td>
+                            </tr>
+                        
+                            <tr>
+                              <td class="prescription"><div class="image"><img src="word.png" alt="Prescription"></div><span><h4>Skin Care</h4></span></td>
+                              <td>08 August 2019</td>
+                              <td>2 Month</td>
+                            </tr>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+              <span class="close">&times;</span>
+              <h2>Coming Soon!</h2>
+              <p>Our website is under construction. Stay tuned for updates!</p>
+            </div>
+          </div>
+
+    </div>
+
+</body>
+
+<script src="index.js"></script>
+
+</html>
